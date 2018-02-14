@@ -124,8 +124,10 @@ class Login extends Component {
 					this.setState(state);
 				}.bind(this),
 				error: function (errorThrown) {
-					let msg = 'Login Failed. Try Again';
+					let msg = $("#button-1").click();
 					let state = this.state;
+					state.password='';
+					state.email='';
 					state.msg = msg;
 					this.setState(state);
 				}.bind(this)
